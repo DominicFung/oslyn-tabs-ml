@@ -20,7 +20,7 @@ click_log.basic_config(logger)
 
 AWS_CLI_MIN_SUPPORTED_VERSION = "2.0.9"
 AWS_S3SYNC_PROFILE = "a1"
-AWS_S3_SYNC_COMMAND = "aws s3 sync --storage-class REDUCED_REDUNDANCY --delete --exact-timestamps {leftPath} {rightPath} --profile {AWS_S3SYNC_PROFILE}"
+AWS_S3_SYNC_COMMAND = "aws s3 sync --storage-class REDUCED_REDUNDANCY --delete --exact-timestamps {leftPath} {rightPath} --profile a1"
 NUM_TOKENS_PER_PUSH = 10.0 #since rate cannot be < 1 in limiter
 
 def _run_long_command(command):
@@ -216,7 +216,7 @@ def push(ctx, s3path, localpath):
     observer.schedule(event_handler, path=localpath, recursive=True)
     observer.start()
     try:
-        while observer.isAlive():
+        while observer.is_alive():
             observer.join(1)
     except KeyboardInterrupt:
         observer.stop()
