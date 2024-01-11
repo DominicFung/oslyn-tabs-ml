@@ -165,3 +165,7 @@ whisper/onnx/
 whisper/model/
 whisper/tflite/
 .DS_Store
+
+test-web/public/models/
+test-web-2/models/
+node_modules

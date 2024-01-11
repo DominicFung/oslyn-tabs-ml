@@ -44,6 +44,7 @@ For future study:
 Once compiled to ONNX, we can check integration using onnxruntime. There seems to be a runtime for both web and react-native.
 
 - Examples: https://github.com/microsoft/onnxruntime-inference-examples
+- https://github.com/microsoft/onnxruntime-inference-examples/blob/main/js/ort-whisper/README.md
 
 
 - [x] Run OpenAI/Whisper in Python
