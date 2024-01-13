@@ -25,3 +25,21 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+/* Add rounded corners to blocks */
+.rounded-block {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  position: relative;
+}
+
+/* Move text inside the border */
+.rounded-block h4 {
+  position: absolute;
+  top: 00%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5px 10px;
+  font-size: 18px;
+}
