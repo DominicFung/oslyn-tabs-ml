@@ -49,5 +49,5 @@ Once compiled to ONNX, we can check integration using onnxruntime. There seems t
 
 - [x] Run OpenAI/Whisper in Python
 - [x] Convert to ONNX
-- [ ] Web integration test
+- [x] Web integration test
 - [ ] React Native Integration test
