@@ -13,7 +13,7 @@ const kIntervalAudio_ms = 1000;
 const kSteps = kSampleRate * 30;
 const kDelay = 100;
 
-const kModel = "whisper_cpu_int8_cpu-cpu_model.onnx";
+const kModel = "models/whisper_cpu_int8_cpu-cpu_model.onnx";
 //const kModel = "decoder_model.onnx";
 
 // ort session
