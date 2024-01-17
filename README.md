@@ -46,8 +46,30 @@ Once compiled to ONNX, we can check integration using onnxruntime. There seems t
 - Examples: https://github.com/microsoft/onnxruntime-inference-examples
 - https://github.com/microsoft/onnxruntime-inference-examples/blob/main/js/ort-whisper/README.md
 
+#### Fine-Tuning Whisper and Saving Model to Local
+
+Check out: https://huggingface.co/blog/fine-tune-whisper. This example is located in `whisper/olive export.ipynb`
+
+Once model is saved, ie in dir `whisper-tiny-hindi-v1-model`, specify this model in `whisper_cpu_int8_dom.json`
+
+```
+{
+    "input_model": {
+        "type": "PyTorchModel",
+        "config": {
+            ...
+            "model_path": "whisper-tiny-hini-v1-model",
+            "hf_config": {
+                ...
+                "model_name": "dom/whisper-tiny-hindi-v1-model.en",
+                ...
+```
+
+Latest model (Onnx) is located in `models`
 
 - [x] Run OpenAI/Whisper in Python
 - [x] Convert to ONNX
 - [x] Web integration test
+- [x] Fine Tune whisper-tiny model,  optimize/export with Microsoft/olive
 - [ ] React Native Integration test
+

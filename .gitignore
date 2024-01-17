@@ -173,3 +173,5 @@ test-web-2/models/
 node_modules
 
 whisper/whisper-tiny-hindi-v1-test
+whisper/whisper-tiny-hindi-v1-model
+whisper/whisper-tiny-hindi-v1-checkpoints
